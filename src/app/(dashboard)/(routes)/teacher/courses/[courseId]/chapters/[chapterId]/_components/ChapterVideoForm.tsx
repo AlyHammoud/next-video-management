@@ -91,7 +91,7 @@ export default function ChapterVideoForm({
             }}
           />
           <div className="text-xs text-muted-foreground mt-4">
-            Upload this chapter&aposs;s video
+            Upload this chapters video
           </div>
         </div>
       )}

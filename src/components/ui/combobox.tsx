@@ -31,7 +31,7 @@ export interface ComboboxProps extends React.HTMLAttributes<HTMLInputElement> {
   onChange: any;
 }
 
-export const Combobox = React.forwardRef<HTMLInputElement, ComboboxProps>(
+const Combobox = React.forwardRef<HTMLInputElement, ComboboxProps>(
   ({ options, value, onChange }, ref) => {
     const [open, setOpen] = React.useState(false);
 
@@ -83,3 +83,7 @@ export const Combobox = React.forwardRef<HTMLInputElement, ComboboxProps>(
     );
   }
 );
+
+Combobox.displayName = "Combobox";
+
+export default Combobox;

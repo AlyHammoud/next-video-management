@@ -10,7 +10,7 @@ interface EditProps {
   value: string;
 }
 
-export const Editor = React.forwardRef<any, EditProps>(
+const Editor = React.forwardRef<any, EditProps>(
   ({ onChange, value }: EditProps, ref) => {
     const ReactQuill = useMemo(
       () => dynamic(() => import("react-quill"), { ssr: false }),
@@ -24,3 +24,5 @@ export const Editor = React.forwardRef<any, EditProps>(
     );
   }
 );
+
+export default Editor;
