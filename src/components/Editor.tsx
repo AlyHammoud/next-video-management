@@ -25,4 +25,5 @@ const Editor = React.forwardRef<any, EditProps>(
   }
 );
 
+Editor.displayName = "Editor";
 export default Editor;
